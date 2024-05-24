@@ -148,41 +148,42 @@
 
 - FastFoward 설명
     
-    ![스크린샷 2024-03-28 오후 12.47.56.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/9fcbafe0-605a-49a4-928e-daa8d9e7906c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.47.56.png)
+    ![스크린샷 2024-03-28 오후 12 47 56](https://github.com/2dhhh/gitprac/assets/109519814/009124ec-2b84-4518-a604-1f6a97f1b517)
     
     - C0 commit → C1 commit → C2 commit 후 iss53 branch로 분기
     - iss53 branch는 현재까지 master branch 상태와 동일한 상태를 갖는다
     
-    ![스크린샷 2024-03-28 오후 12.48.07.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/7efe4de2-3549-4b92-9bf1-baac72af5148/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.48.07.png)
+    ![스크린샷 2024-03-28 오후 12 48 07](https://github.com/2dhhh/gitprac/assets/109519814/173af330-711b-4709-8e50-ed61565791f4)
     
     - iss53 branch는 수정 후 C3 commit 진행
     
-    ![스크린샷 2024-03-28 오후 12.48.24.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/6d102b24-5326-469a-9feb-90038451f5fd/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.48.24.png)
+    ![스크린샷 2024-03-28 오후 12 48 24](https://github.com/2dhhh/gitprac/assets/109519814/9a315eed-38ed-42c7-95b8-c43037cee98d)
     
     - 급하게 수정 할 내용이 생겨 master branch에서 hotfix branch로 분기 후 파일 수정 후 C4 commit 진행
     - 현재 iss53과 hotfix branch는 동일한 부모 commit을 갖는다
     - hotfix branch는 더 이상 필요하지 않기 때문에 branch에서 삭제 시켜준다
     - fastfoward는 새로운 commit을 생성하지 않는디
     
-    ![스크린샷 2024-03-28 오후 12.49.09.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/8c36cfa6-861e-4bc3-b689-cf6e1067b5ef/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.49.09.png)
+    ![스크린샷 2024-03-28 오후 12 49 09](https://github.com/2dhhh/gitprac/assets/109519814/96666344-b8a5-412e-baf9-4b38d27befcb)
     
     - master branch에서 hoxfix bracnh를 merge 진행
     - 첫 번째 commit의 기록을 따라 도달할 수 있는 commit이 하나의 commit을 merge할 때 merge할 다양한 작업이 없기 때문에 단순히 포인터를 앞으로 이동항 작업을 단순화하는데 이를 fastforwar(빨리감기) 라고 한다
 
 - Recursive strategy 설명
     
-    ![스크린샷 2024-03-28 오후 1.03.01.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/9ebe33c6-d0a7-4bed-a911-44aa260f4684/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_1.03.01.png)
+    ![스크린샷 2024-03-28 오후 1 03 01](https://github.com/2dhhh/gitprac/assets/109519814/4bf8007e-c7a9-4680-8b19-c21ca682a544)
     
     - 위 fastforwd 후 연속해서 진행하는 상태
     - iss53 branch에서 C5 commit 진행 후 master branch로 checkout
     - master branch에서 iss53 branch를 merge 준비
     
-    ![스크린샷 2024-03-28 오후 1.03.10.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/18b66e22-69c7-41cb-b25c-2e144d572f1b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_1.03.10.png)
+    ![스크린샷 2024-03-28 오후 1 03 10](https://github.com/2dhhh/gitprac/assets/109519814/30ee651d-d604-4c08-a7b9-52ce45ea98e8)
+
     
     - iss53 branch와 master branch는 C2라는 조상 commit을 갖는다
     - merge 수행 → 공통 조상을 이용한 3-way merge 진행
     
-    ![스크린샷 2024-03-28 오후 1.03.20.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/33310493-c21e-46a7-926d-49dea0bde4db/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-03-28_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_1.03.20.png)
+    ![스크린샷 2024-03-28 오후 1 03 20](https://github.com/2dhhh/gitprac/assets/109519814/cf346831-ad31-4671-add7-9eaf3494a38d)
     
     - 3-way merge는  merge시 merge commit을 즉 새로운 commit을 생성한다
 
@@ -234,7 +235,8 @@
 - 그림과 같이 SSH 방식을 이용하기 위해서는 key가 필요하다 해당 키는 Mac을 기준으로 터미널에 
 ssh-keyagent 명령어를 입력하여 두 개의 키를 생성할 수 있다. 해당 키 중 id_rsa.pub 키는 원격 저장소에 등록하여 사용하면 된다.
 
-![스크린샷 2024-04-05 오전 8.34.55.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/635cc3d8-c6ad-4648-9ebb-f81c1fa49ea1/5e0c9bed-6753-4a83-8a00-5d84a6be65c3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-04-05_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_8.34.55.png)
+![스크린샷 2024-04-05 오전 8 34 55](https://github.com/2dhhh/gitprac/assets/109519814/bc6339b5-7baf-475f-8cb9-6b401a6b3897)
+
 
 ### Github(원격 저장소) 관련 Git 명령어
 
