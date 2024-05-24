@@ -76,11 +76,11 @@
     
     : 로그를 역으로 보여준다 → 첫 번째 commit이 가장 상단에 위치 기존에는 제일 하단에 위치
     
-    📌 git log <branch>..<branch>
+    📌 git log branch명 .. branch명
     
     : branch 간의 차이를 알 수 있다
     
-    📌 git log -p <branch>..<branch>
+    📌 git log -p branch명..branch명
     
     : branch 간의 차이를 소스 코드 수준까지 알 수 있다
     
@@ -103,7 +103,7 @@
 
 *diff 옵션*
 
-📌 git diff <commit_ID>..<commit_ID>
+📌 git diff commit_ID..commit_ID
 
 : 두 commit 사이의 소스 상의 차이를 확인할 수 있다 
 
@@ -120,23 +120,23 @@
 
 :  <branch> 이름의 branch 생성
 
-📌 git branch -d <branch>
+📌 git branch -d branch명
 
 : <branch> 이름의 branch 삭제
 
-### ✅ git checkout <branch>
+### ✅ git checkout branch명
 
 - <branch> 이름의 branch로 branch 변경
 
 *checkout 옵션*
 
-📌 git checkout -b <branch>
+📌 git checkout -b branch명
 
 : <branch> branch를 생성하고 해당 branch로 checkout 진행 
 
-📌 git checkout <commit_id>
+📌 git checkout commit_id
 
-: <commit_id>로 branch 변경 
+: commit_id로 branch 변경 
 
 ### ✅ git merge
 
@@ -144,7 +144,7 @@
 - Fastfoward 방식과 Recursive Strategy 방식 존재
 - git merge <branch>
 
-: 현재 branch에 <branch>를 merge한다
+: 현재 branch에 branch를 merge한다
 
 - FastFoward 설명
     
