@@ -92,7 +92,7 @@
     
     : branch의 상태를 graph로 보여준다 
     
-    📌 git log --branches --decorate --oneline
+    📌 git log --branches --decorate --graph --oneline
     
     : branch의 상태를 graph로 표현하고 한 줄로 표시해준다 
     
